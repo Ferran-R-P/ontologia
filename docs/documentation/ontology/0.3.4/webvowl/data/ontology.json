@@ -1,0 +1,1337 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://sparql.cwrc.ca/ontologies/cwrc", "http://www.ontotext.com/proton/protontop", "https://w3id.org/sbeo", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2003/01/geo/wgs84_pos", "https://www.heppnetz.de/ontologies/tio/ns", "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology" ],
+    "title" : {
+      "undefined" : "Tourism Ontology"
+    },
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#",
+    "version" : "0.3.4",
+    "author" : [ "Ferran Rincón Puente" ],
+    "description" : {
+      "undefined" : "Ontology for representing key concepts in tourism, including cities, hotels, restaurants, attractions, transport, and events."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ferran Rincón Puente",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.3.4",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Tourism Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://dbpedia.org/ontology/Monument",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Monument",
+      "undefined" : "Monument"
+    },
+    "comment" : {
+      "en" : "A type of structure (a statue or an art object) created to commemorate a person or important event, not necessarily of a catastrophic nature."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Metro",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metro",
+      "undefined" : "Metro"
+    },
+    "comment" : {
+      "en" : "An underground or elevated rail transport system in cities."
+    },
+    "id" : "10",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalSite",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalSite",
+      "undefined" : "Cultural Site"
+    },
+    "comment" : {
+      "en" : "A site of cultural significance, such as theatres or galleries."
+    },
+    "id" : "12",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://www.heppnetz.de/ontologies/tio/ns#Taxi",
+    "baseIri" : "https://www.heppnetz.de/ontologies/tio/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Taxi",
+      "undefined" : "Taxi"
+    },
+    "comment" : {
+      "en" : "A taxi service to transport passengers from one location to another location."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "11" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "20", "11", "7", "5", "14" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Park",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Park",
+      "undefined" : "Park"
+    },
+    "comment" : {
+      "en" : "A park is an area of open space provided for recreational use. http://en.wikipedia.org/wiki/Park"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://sparql.cwrc.ca/ontologies/cwrc#Event",
+    "baseIri" : "https://sparql.cwrc.ca/ontologies/cwrc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "subClasses" : [ "18", "4", "25", "26", "27" ],
+    "comment" : {
+      "en" : "An event that occurs in time."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TouristHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristHotel",
+      "undefined" : "Tourist Hotel"
+    },
+    "comment" : {
+      "en" : "A general-purpose hotel aimed at tourists."
+    },
+    "id" : "33",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Museum",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Museum",
+      "undefined" : "Museum"
+    },
+    "comment" : {
+      "en" : "An institution that conserves and exhibits cultural or historical artifacts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MexicanCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MexicanCuisine",
+      "undefined" : "Mexican Cuisine"
+    },
+    "comment" : {
+      "en" : "Traditional cuisine from Mexico, featuring spicy dishes."
+    },
+    "id" : "47",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalEvent",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalEvent",
+      "undefined" : "Cultural Event"
+    },
+    "comment" : {
+      "en" : "An event focused on cultural expression or heritage."
+    },
+    "id" : "25",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BeachHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BeachHotel",
+      "undefined" : "Beach Hotel"
+    },
+    "comment" : {
+      "en" : "A hotel located near or on a beach, typically for vacation stays."
+    },
+    "id" : "56",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cuisine",
+      "undefined" : "Cuisine"
+    },
+    "subClasses" : [ "47", "46", "52" ],
+    "comment" : {
+      "en" : "Represents a type of cuisine served in a restaurant."
+    },
+    "id" : "15"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#GastronomicEvent",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GastronomicEvent",
+      "undefined" : "Gastronomic Event"
+    },
+    "comment" : {
+      "en" : "An event centered around food, cuisine or tasting experiences."
+    },
+    "id" : "26",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TechnologyEvent",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnologyEvent",
+      "undefined" : "Technology Event"
+    },
+    "comment" : {
+      "en" : "An event involving technological themes or presentations."
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attraction",
+      "undefined" : "Attraction"
+    },
+    "subClasses" : [ "12", "35", "6", "21", "71" ],
+    "comment" : {
+      "en" : "A vocabulary to describe touristic places."
+    },
+    "id" : "7"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#JapaneseCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "JapaneseCuisine",
+      "undefined" : "Japanese Cuisine"
+    },
+    "comment" : {
+      "en" : "Cuisine from Japan, known for sushi and precise presentation."
+    },
+    "id" : "46",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Restaurant",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "undefined" : "Restaurant"
+    },
+    "comment" : {
+      "en" : "A place where meals are prepared and served."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Beach",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Beach",
+      "undefined" : "Beach"
+    },
+    "comment" : {
+      "en" : "The shore of a body of water, especially when sandy or pebbly."
+    },
+    "attributes" : [ "external" ],
+    "id" : "71",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/City",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "comment" : {
+      "en" : "A relatively large and permanent settlement, particularly a large urban settlement."
+    },
+    "attributes" : [ "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#LuxuryHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LuxuryHotel",
+      "undefined" : "Luxury Hotel"
+    },
+    "comment" : {
+      "en" : "A high-end hotel offering premium services and comfort."
+    },
+    "id" : "75",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MediterraneanCuisine",
+      "undefined" : "Mediterranean Cuisine"
+    },
+    "subClasses" : [ "85", "77" ],
+    "comment" : {
+      "en" : "Cuisine based on Mediterranean cultures."
+    },
+    "id" : "52",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#AndalusianCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AndalusianCuisine",
+      "undefined" : "Andalusian Cuisine"
+    },
+    "comment" : {
+      "en" : "Regional Spanish cuisine from Andalusia, rich in olive oil and tapas."
+    },
+    "id" : "85",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Hotel",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel",
+      "undefined" : "Hotel"
+    },
+    "subClasses" : [ "75", "81", "79", "56", "33" ],
+    "comment" : {
+      "en" : "A place that offers accommodation to tourists."
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TransportCompany",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportCompany",
+      "undefined" : "Transport Company"
+    },
+    "comment" : {
+      "en" : "An organization that operates transport services."
+    },
+    "id" : "43"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "undefined" : "Transport"
+    },
+    "subClasses" : [ "16", "37", "64", "10", "41" ],
+    "comment" : {
+      "en" : "A means or system used to move people across places."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#RuralHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RuralHotel",
+      "undefined" : "Rural Hotel"
+    },
+    "comment" : {
+      "en" : "A hotel located in rural areas, ideal for nature and countryside tourism."
+    },
+    "id" : "79",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BusinessHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessHotel",
+      "undefined" : "Business Hotel"
+    },
+    "comment" : {
+      "en" : "A hotel tailored for business travelers with related amenities."
+    },
+    "id" : "81",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://schema.org/MusicEvent",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicEvent",
+      "undefined" : "Music Event"
+    },
+    "comment" : {
+      "en" : "An event where live or recorded music is performed."
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#PublicBike",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicBike",
+      "undefined" : "Public Bike"
+    },
+    "comment" : {
+      "en" : "A shared bicycle service available for short-term rental."
+    },
+    "id" : "41",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#ItalianCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ItalianCuisine",
+      "undefined" : "Italian Cuisine"
+    },
+    "comment" : {
+      "en" : "Cuisine style originating from Italy, known for pasta and pizza."
+    },
+    "id" : "77",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Bus",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bus",
+      "undefined" : "Bus"
+    },
+    "comment" : {
+      "en" : "A road vehicle designed to carry multiple passengers."
+    },
+    "id" : "64",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Tram",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tram",
+      "undefined" : "Tram"
+    },
+    "comment" : {
+      "en" : "A street-level rail vehicle used for public transit."
+    },
+    "id" : "37",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/SportsEvent",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SportsEvent",
+      "undefined" : "Sports Event"
+    },
+    "comment" : {
+      "en" : "A event of competitive physical activity."
+    },
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "5" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "93",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "94",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "95",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "96",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "97",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "98",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "99",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "100",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "101",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "102",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "rating",
+      "undefined" : "rating"
+    },
+    "maxCardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "en" : "Average rating based on user reviews."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#pricePerNight",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "pricePerNight",
+      "undefined" : "price per night"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "en" : "Cost of staying one night at the hotel."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasCuisine",
+      "undefined" : "has cuisine"
+    },
+    "cardinality" : "1",
+    "domain" : "14",
+    "comment" : {
+      "en" : "Indicates the type of cuisine a restaurant offers."
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "range" : "5",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#date",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "date",
+      "undefined" : "date"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "en" : "Date when an event takes place."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "en" : "The name or title of the entity."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "34"
+  }, {
+    "range" : "16",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "37",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "16",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "16",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.ontotext.com/proton/protontop#operatedBy",
+    "baseIri" : "http://www.ontotext.com/proton/protontop",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "operatedBy",
+      "undefined" : "operated by"
+    },
+    "cardinality" : "1",
+    "domain" : "11",
+    "comment" : {
+      "en" : "A relation between a service and the agent (usually organisation), who provides it."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "42"
+  }, {
+    "range" : "37",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "41",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasTransport",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasTransport",
+      "undefined" : "has transport"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "Associates a city with available transport services."
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "range" : "47",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "7",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "7",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "long",
+      "undefined" : "long"
+    },
+    "maxCardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "en" : "Represents the longitude of a location, in decimal degrees."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/sbeo#locatedIn",
+    "baseIri" : "https://w3id.org/sbeo",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "locatedIn",
+      "undefined" : "located in"
+    },
+    "cardinality" : "1",
+    "domain" : "19",
+    "comment" : {
+      "en" : "States the location of any social unit, activity, event, physical space, or a point of interest at any other physical space."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "58"
+  }, {
+    "range" : "15",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "15",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "7",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "15",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "11",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "11",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "11",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "11",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "20",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "lat",
+      "undefined" : "lat"
+    },
+    "maxCardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "en" : "Represents the latitude of a location, in decimal degrees."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "70"
+  }, {
+    "range" : "20",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#stars",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "stars",
+      "undefined" : "stars"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "en" : "Star rating of a hotel from 1 to 5."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "range" : "20",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "52",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "20",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "20",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "5",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "5",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "52",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "5",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasRestaurant",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasRestaurant",
+      "undefined" : "has restaurant"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "Associates a city with a restaurant."
+    },
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "averagePrice",
+      "undefined" : "average price"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "en" : "Average price for services."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasHotel",
+      "undefined" : "has hotel"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "Associates a city with a hotel located in it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasAttraction",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasAttraction",
+      "undefined" : "has attraction"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "Associates a city with an attraction."
+    },
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "identifier",
+      "undefined" : "identifier"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "comment" : {
+      "en" : "Unique identifier for an individual entity."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "range" : "7",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "6",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "35",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "79",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "37",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "16",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "10",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "41",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "52",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "21",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "12",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "iri" : "https://sparql.cwrc.ca/ontologies/cwrc#hasEvent",
+    "baseIri" : "https://sparql.cwrc.ca/ontologies/cwrc",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasEvent",
+      "undefined" : "has event"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "Associates a Context with an Event."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "103"
+  } ]
+}
