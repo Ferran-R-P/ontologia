@@ -1,0 +1,758 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#"
+     xml:base="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#">
+        <dc:creator>Ferran Rincón Puente</dc:creator>
+        <dc:description>Ontology for representing key concepts in tourism, including cities, hotels, restaurants, attractions, transport, and events.</dc:description>
+        <dc:title>Tourism Ontology</dc:title>
+        <owl:versionInfo>0.3.4</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ontotext.com/proton/protontop#operatedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontotext.com/proton/protontop#operatedBy">
+        <rdfs:domain rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport"/>
+        <rdfs:range rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TransportCompany"/>
+        <rdfs:label>operated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasAttraction -->
+
+
+    <owl:ObjectProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasAttraction">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:range rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction"/>
+        <rdfs:label>has attraction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine -->
+
+
+    <owl:ObjectProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Restaurant"/>
+        <rdfs:range rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine"/>
+        <rdfs:label>has cuisine</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasHotel -->
+
+
+    <owl:ObjectProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasHotel">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Hotel"/>
+        <rdfs:label>has hotel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasRestaurant -->
+
+
+    <owl:ObjectProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasRestaurant">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Restaurant"/>
+        <rdfs:label>has restaurant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasTransport -->
+
+
+    <owl:ObjectProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasTransport">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:range rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport"/>
+        <rdfs:label>has transport</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://sparql.cwrc.ca/ontologies/cwrc#hasEvent -->
+
+
+    <owl:ObjectProperty rdf:about="https://sparql.cwrc.ca/ontologies/cwrc#hasEvent">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:range rdf:resource="https://sparql.cwrc.ca/ontologies/cwrc#Event"/>
+        <rdfs:label>has event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sbeo#locatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sbeo#locatedIn">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Hotel"/>
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Restaurant"/>
+        <rdfs:domain rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction"/>
+        <rdfs:domain rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport"/>
+        <rdfs:domain rdf:resource="https://sparql.cwrc.ca/ontologies/cwrc#Event"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/City"/>
+        <rdfs:label>located in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:label>lat</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:label>long</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice">
+        <rdfs:label>average price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#date -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#date">
+        <rdfs:label>date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier">
+        <rdfs:label>identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name">
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#pricePerNight -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#pricePerNight">
+        <rdfs:label>price per night</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating">
+        <rdfs:label>rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#stars -->
+
+
+    <owl:DatatypeProperty rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#stars">
+        <rdfs:label>stars</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Beach -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Beach">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction"/>
+        <rdfs:label>Beach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/City -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/City">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Hotel -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Hotel">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/sbeo#locatedIn"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#pricePerNight"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#stars"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Monument -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Monument">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction"/>
+        <rdfs:label>Monument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Museum -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Museum">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction"/>
+        <rdfs:label>Museum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Park -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Park">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction"/>
+        <rdfs:label>Park</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Restaurant -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Restaurant">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SportsEvent -->
+
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SportsEvent">
+        <rdfs:subClassOf rdf:resource="https://sparql.cwrc.ca/ontologies/cwrc#Event"/>
+        <rdfs:label>Sports Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#AndalusianCuisine -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#AndalusianCuisine">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine"/>
+        <rdfs:label>Andalusian Cuisine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Attraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BeachHotel -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BeachHotel">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Hotel"/>
+        <rdfs:label>Beach Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Bus -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Bus">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport"/>
+        <rdfs:label>Bus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BusinessHotel -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BusinessHotel">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Hotel"/>
+        <rdfs:label>Business Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine">
+        <rdfs:label>Cuisine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalEvent -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalEvent">
+        <rdfs:subClassOf rdf:resource="https://sparql.cwrc.ca/ontologies/cwrc#Event"/>
+        <rdfs:label>Cultural Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalSite -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalSite">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction"/>
+        <rdfs:label>Cultural Site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#GastronomicEvent -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#GastronomicEvent">
+        <rdfs:subClassOf rdf:resource="https://sparql.cwrc.ca/ontologies/cwrc#Event"/>
+        <rdfs:label>Gastronomic Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#ItalianCuisine -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#ItalianCuisine">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine"/>
+        <rdfs:label>Italian Cuisine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#JapaneseCuisine -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#JapaneseCuisine">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine"/>
+        <rdfs:label>Japanese Cuisine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#LuxuryHotel -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#LuxuryHotel">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Hotel"/>
+        <rdfs:label>Luxury Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine"/>
+        <rdfs:label>Mediterranean Cuisine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Metro -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Metro">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport"/>
+        <rdfs:label>Metro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MexicanCuisine -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MexicanCuisine">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine"/>
+        <rdfs:label>Mexican Cuisine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#PublicBike -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#PublicBike">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport"/>
+        <rdfs:label>Public Bike</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#RuralHotel -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#RuralHotel">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Hotel"/>
+        <rdfs:label>Rural Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TechnologyEvent -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TechnologyEvent">
+        <rdfs:subClassOf rdf:resource="https://sparql.cwrc.ca/ontologies/cwrc#Event"/>
+        <rdfs:label>Technology Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TouristHotel -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TouristHotel">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Hotel"/>
+        <rdfs:label>Tourist Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Tram -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Tram">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport"/>
+        <rdfs:label>Tram</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontotext.com/proton/protontop#operatedBy"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/sbeo#locatedIn"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TransportCompany -->
+
+
+    <owl:Class rdf:about="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TransportCompany">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Transport Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/MusicEvent -->
+
+
+    <owl:Class rdf:about="https://schema.org/MusicEvent">
+        <rdfs:subClassOf rdf:resource="https://sparql.cwrc.ca/ontologies/cwrc#Event"/>
+        <rdfs:label>Music Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://sparql.cwrc.ca/ontologies/cwrc#Event -->
+
+
+    <owl:Class rdf:about="https://sparql.cwrc.ca/ontologies/cwrc#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#date"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.heppnetz.de/ontologies/tio/ns#Taxi -->
+
+
+    <owl:Class rdf:about="https://www.heppnetz.de/ontologies/tio/ns#Taxi">
+        <rdfs:subClassOf rdf:resource="https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport"/>
+        <rdfs:label>Taxi</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

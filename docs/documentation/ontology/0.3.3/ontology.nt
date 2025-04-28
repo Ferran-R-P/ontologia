@@ -1,0 +1,407 @@
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#> <http://purl.org/dc/elements/1.1/creator> "Ferran Rincón Puente" .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#> <http://purl.org/dc/elements/1.1/description> "Ontology for representing key concepts in tourism, including cities, hotels, restaurants, attractions, transport, and events." .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#> <http://purl.org/dc/elements/1.1/title> "Tourism Ontology" .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#> <http://www.w3.org/2002/07/owl#versionInfo> "0.3.4" .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ontotext.com/proton/protontop#operatedBy
+<http://www.ontotext.com/proton/protontop#operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ontotext.com/proton/protontop#operatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> .
+<http://www.ontotext.com/proton/protontop#operatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TransportCompany> .
+<http://www.ontotext.com/proton/protontop#operatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "operated by" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasAttraction
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasAttraction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/City> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasAttraction> <http://www.w3.org/2000/01/rdf-schema#range> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "has attraction" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/Restaurant> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine> <http://www.w3.org/2000/01/rdf-schema#range> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine> <http://www.w3.org/2000/01/rdf-schema#label> "has cuisine" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasHotel
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasHotel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/City> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasHotel> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Hotel> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasHotel> <http://www.w3.org/2000/01/rdf-schema#label> "has hotel" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasRestaurant
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasRestaurant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/City> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasRestaurant> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Restaurant> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "has restaurant" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasTransport
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasTransport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/City> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasTransport> <http://www.w3.org/2000/01/rdf-schema#range> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasTransport> <http://www.w3.org/2000/01/rdf-schema#label> "has transport" .
+# 
+# https://sparql.cwrc.ca/ontologies/cwrc#hasEvent
+<https://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/City> .
+<https://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <https://sparql.cwrc.ca/ontologies/cwrc#Event> .
+<https://sparql.cwrc.ca/ontologies/cwrc#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "has event" .
+# 
+# https://w3id.org/sbeo#locatedIn
+<https://w3id.org/sbeo#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/sbeo#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/Hotel> .
+<https://w3id.org/sbeo#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://dbpedia.org/ontology/Restaurant> .
+<https://w3id.org/sbeo#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> .
+<https://w3id.org/sbeo#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> .
+<https://w3id.org/sbeo#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://sparql.cwrc.ca/ontologies/cwrc#Event> .
+<https://w3id.org/sbeo#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/City> .
+<https://w3id.org/sbeo#locatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "located in" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#label> "lat" .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#label> "long" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice> <http://www.w3.org/2000/01/rdf-schema#label> "average price" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#date
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#date> <http://www.w3.org/2000/01/rdf-schema#label> "date" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#pricePerNight
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#pricePerNight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#pricePerNight> <http://www.w3.org/2000/01/rdf-schema#label> "price per night" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating> <http://www.w3.org/2000/01/rdf-schema#label> "rating" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#stars
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#stars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#stars> <http://www.w3.org/2000/01/rdf-schema#label> "stars" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/Beach
+<http://dbpedia.org/ontology/Beach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Beach> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> .
+<http://dbpedia.org/ontology/Beach> <http://www.w3.org/2000/01/rdf-schema#label> "Beach" .
+# 
+# http://dbpedia.org/ontology/City
+<http://dbpedia.org/ontology/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2003/01/geo/wgs84_pos#long> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+# 
+# http://dbpedia.org/ontology/Hotel
+<http://dbpedia.org/ontology/Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/sbeo#locatedIn> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#pricePerNight> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#stars> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel" .
+# 
+# http://dbpedia.org/ontology/Monument
+<http://dbpedia.org/ontology/Monument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Monument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> .
+<http://dbpedia.org/ontology/Monument> <http://www.w3.org/2000/01/rdf-schema#label> "Monument" .
+# 
+# http://dbpedia.org/ontology/Museum
+<http://dbpedia.org/ontology/Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Museum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> .
+<http://dbpedia.org/ontology/Museum> <http://www.w3.org/2000/01/rdf-schema#label> "Museum" .
+# 
+# http://dbpedia.org/ontology/Park
+<http://dbpedia.org/ontology/Park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Park> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> .
+<http://dbpedia.org/ontology/Park> <http://www.w3.org/2000/01/rdf-schema#label> "Park" .
+# 
+# http://dbpedia.org/ontology/Restaurant
+<http://dbpedia.org/ontology/Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://dbpedia.org/ontology/Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant" .
+# 
+# http://dbpedia.org/ontology/SportsEvent
+<http://dbpedia.org/ontology/SportsEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/SportsEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sparql.cwrc.ca/ontologies/cwrc#Event> .
+<http://dbpedia.org/ontology/SportsEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Sports Event" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#AndalusianCuisine
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#AndalusianCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#AndalusianCuisine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#AndalusianCuisine> <http://www.w3.org/2000/01/rdf-schema#label> "Andalusian Cuisine" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BeachHotel
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BeachHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Hotel> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BeachHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Beach Hotel" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Bus
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Bus> <http://www.w3.org/2000/01/rdf-schema#label> "Bus" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BusinessHotel
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BusinessHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Hotel> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Business Hotel" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine> <http://www.w3.org/2000/01/rdf-schema#label> "Cuisine" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalEvent
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sparql.cwrc.ca/ontologies/cwrc#Event> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Event" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalSite
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalSite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalSite> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Site" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#GastronomicEvent
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#GastronomicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#GastronomicEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sparql.cwrc.ca/ontologies/cwrc#Event> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#GastronomicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Gastronomic Event" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#ItalianCuisine
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#ItalianCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#ItalianCuisine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#ItalianCuisine> <http://www.w3.org/2000/01/rdf-schema#label> "Italian Cuisine" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#JapaneseCuisine
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#JapaneseCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#JapaneseCuisine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#JapaneseCuisine> <http://www.w3.org/2000/01/rdf-schema#label> "Japanese Cuisine" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#LuxuryHotel
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#LuxuryHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Hotel> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#LuxuryHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Luxury Hotel" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine> <http://www.w3.org/2000/01/rdf-schema#label> "Mediterranean Cuisine" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Metro
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Metro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Metro> <http://www.w3.org/2000/01/rdf-schema#label> "Metro" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MexicanCuisine
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MexicanCuisine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MexicanCuisine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MexicanCuisine> <http://www.w3.org/2000/01/rdf-schema#label> "Mexican Cuisine" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#PublicBike
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#PublicBike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#PublicBike> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#PublicBike> <http://www.w3.org/2000/01/rdf-schema#label> "Public Bike" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#RuralHotel
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#RuralHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Hotel> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#RuralHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Rural Hotel" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TechnologyEvent
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TechnologyEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TechnologyEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sparql.cwrc.ca/ontologies/cwrc#Event> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TechnologyEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Technology Event" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TouristHotel
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TouristHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TouristHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://dbpedia.org/ontology/Hotel> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TouristHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Tourist Hotel" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Tram
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Tram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Tram> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Tram> <http://www.w3.org/2000/01/rdf-schema#label> "Tram" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontotext.com/proton/protontop#operatedBy> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/sbeo#locatedIn> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport" .
+# 
+# https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TransportCompany
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TransportCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TransportCompany> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TransportCompany> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Company" .
+# 
+# https://schema.org/MusicEvent
+<https://schema.org/MusicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/MusicEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://sparql.cwrc.ca/ontologies/cwrc#Event> .
+<https://schema.org/MusicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Music Event" .
+# 
+# https://sparql.cwrc.ca/ontologies/cwrc#Event
+<https://sparql.cwrc.ca/ontologies/cwrc#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://sparql.cwrc.ca/ontologies/cwrc#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#date> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://sparql.cwrc.ca/ontologies/cwrc#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://sparql.cwrc.ca/ontologies/cwrc#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://sparql.cwrc.ca/ontologies/cwrc#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# https://www.heppnetz.de/ontologies/tio/ns#Taxi
+<https://www.heppnetz.de/ontologies/tio/ns#Taxi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.heppnetz.de/ontologies/tio/ns#Taxi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport> .
+<https://www.heppnetz.de/ontologies/tio/ns#Taxi> <http://www.w3.org/2000/01/rdf-schema#label> "Taxi" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

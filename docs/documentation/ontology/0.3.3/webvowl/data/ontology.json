@@ -1,0 +1,1043 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://sparql.cwrc.ca/ontologies/cwrc", "http://www.ontotext.com/proton/protontop", "https://w3id.org/sbeo", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2003/01/geo/wgs84_pos", "https://www.heppnetz.de/ontologies/tio/ns", "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology" ],
+    "title" : {
+      "undefined" : "Tourism Ontology"
+    },
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#",
+    "version" : "0.3.4",
+    "author" : [ "Ferran Rincón Puente" ],
+    "description" : {
+      "undefined" : "Ontology for representing key concepts in tourism, including cities, hotels, restaurants, attractions, transport, and events."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ferran Rincón Puente",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.3.4",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Tourism Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://dbpedia.org/ontology/Monument",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Monument",
+      "undefined" : "Monument"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Beach",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Beach",
+      "undefined" : "Beach"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Metro",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Metro",
+      "undefined" : "Metro"
+    },
+    "id" : "14",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/City",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalSite",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalSite",
+      "undefined" : "Cultural Site"
+    },
+    "id" : "18",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://www.heppnetz.de/ontologies/tio/ns#Taxi",
+    "baseIri" : "https://www.heppnetz.de/ontologies/tio/ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Taxi",
+      "undefined" : "Taxi"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Park",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Park",
+      "undefined" : "Park"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://sparql.cwrc.ca/ontologies/cwrc#Event",
+    "baseIri" : "https://sparql.cwrc.ca/ontologies/cwrc",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "subClasses" : [ "34", "35", "36", "37", "38" ],
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#LuxuryHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LuxuryHotel",
+      "undefined" : "Luxury Hotel"
+    },
+    "id" : "51",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MediterraneanCuisine",
+      "undefined" : "Mediterranean Cuisine"
+    },
+    "subClasses" : [ "52", "53" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TouristHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristHotel",
+      "undefined" : "Tourist Hotel"
+    },
+    "id" : "50",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#AndalusianCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AndalusianCuisine",
+      "undefined" : "Andalusian Cuisine"
+    },
+    "id" : "52",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Hotel",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel",
+      "undefined" : "Hotel"
+    },
+    "subClasses" : [ "51", "56", "47", "45", "50" ],
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TransportCompany",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportCompany",
+      "undefined" : "Transport Company"
+    },
+    "id" : "57"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "undefined" : "Transport"
+    },
+    "subClasses" : [ "22", "40", "32", "14", "42" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Museum",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Museum",
+      "undefined" : "Museum"
+    },
+    "attributes" : [ "external" ],
+    "id" : "58",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#RuralHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RuralHotel",
+      "undefined" : "Rural Hotel"
+    },
+    "id" : "47",
+    "superClasses" : [ "21" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "21", "15", "10", "33", "8" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MexicanCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MexicanCuisine",
+      "undefined" : "Mexican Cuisine"
+    },
+    "id" : "27",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BusinessHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessHotel",
+      "undefined" : "Business Hotel"
+    },
+    "id" : "56",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalEvent",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalEvent",
+      "undefined" : "Cultural Event"
+    },
+    "id" : "36",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BeachHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BeachHotel",
+      "undefined" : "Beach Hotel"
+    },
+    "id" : "45",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cuisine",
+      "undefined" : "Cuisine"
+    },
+    "subClasses" : [ "27", "25", "4" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#GastronomicEvent",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GastronomicEvent",
+      "undefined" : "Gastronomic Event"
+    },
+    "id" : "37",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://schema.org/MusicEvent",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicEvent",
+      "undefined" : "Music Event"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TechnologyEvent",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnologyEvent",
+      "undefined" : "Technology Event"
+    },
+    "id" : "35",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#PublicBike",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicBike",
+      "undefined" : "Public Bike"
+    },
+    "id" : "42",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#ItalianCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ItalianCuisine",
+      "undefined" : "Italian Cuisine"
+    },
+    "id" : "53",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attraction",
+      "undefined" : "Attraction"
+    },
+    "subClasses" : [ "18", "58", "9", "28", "13" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Bus",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bus",
+      "undefined" : "Bus"
+    },
+    "id" : "32",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#JapaneseCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "JapaneseCuisine",
+      "undefined" : "Japanese Cuisine"
+    },
+    "id" : "25",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Tram",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tram",
+      "undefined" : "Tram"
+    },
+    "id" : "40",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://dbpedia.org/ontology/Restaurant",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "undefined" : "Restaurant"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/SportsEvent",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SportsEvent",
+      "undefined" : "Sports Event"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38",
+    "superClasses" : [ "33" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "rating",
+      "undefined" : "rating"
+    },
+    "maxCardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasRestaurant",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasRestaurant",
+      "undefined" : "has restaurant"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#pricePerNight",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "pricePerNight",
+      "undefined" : "price per night"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "averagePrice",
+      "undefined" : "average price"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasCuisine",
+      "undefined" : "has cuisine"
+    },
+    "cardinality" : "1",
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasHotel",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasHotel",
+      "undefined" : "has hotel"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasAttraction",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasAttraction",
+      "undefined" : "has attraction"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "range" : "5",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "5",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#date",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "date",
+      "undefined" : "date"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "range" : "15",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "15",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "15",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "21",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "21",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "15",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "21",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "range" : "21",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "4",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "21",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "33",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "33",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "4",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.ontotext.com/proton/protontop#operatedBy",
+    "baseIri" : "http://www.ontotext.com/proton/protontop",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "operatedBy",
+      "undefined" : "operated by"
+    },
+    "cardinality" : "1",
+    "domain" : "15",
+    "attributes" : [ "object", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "identifier",
+      "undefined" : "identifier"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "range" : "33",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "33",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasTransport",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasTransport",
+      "undefined" : "has transport"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "71"
+  }, {
+    "range" : "33",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "long",
+      "undefined" : "long"
+    },
+    "maxCardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/sbeo#locatedIn",
+    "baseIri" : "https://w3id.org/sbeo",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "locatedIn",
+      "undefined" : "located in"
+    },
+    "cardinality" : "1",
+    "domain" : "69",
+    "attributes" : [ "object", "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "lat",
+      "undefined" : "lat"
+    },
+    "maxCardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#stars",
+    "baseIri" : "https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "stars",
+      "undefined" : "stars"
+    },
+    "cardinality" : "1",
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "79"
+  }, {
+    "range" : "10",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://sparql.cwrc.ca/ontologies/cwrc#hasEvent",
+    "baseIri" : "https://sparql.cwrc.ca/ontologies/cwrc",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasEvent",
+      "undefined" : "has event"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "81"
+  }, {
+    "range" : "10",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "10",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "10",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  } ]
+}
