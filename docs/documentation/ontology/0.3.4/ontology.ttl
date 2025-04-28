@@ -1,0 +1,519 @@
+@prefix : <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#> .
+
+<https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#> rdf:type owl:Ontology ;
+                                                                            <http://purl.org/dc/elements/1.1/creator> "Ferran Rincón Puente" ;
+                                                                            <http://purl.org/dc/elements/1.1/description> "Ontology for representing key concepts in tourism, including cities, hotels, restaurants, attractions, transport, and events." ;
+                                                                            <http://purl.org/dc/elements/1.1/title> "Tourism Ontology" ;
+                                                                            owl:versionInfo "0.3.4" ;
+                                                                            <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.ontotext.com/proton/protontop#operatedBy
+<http://www.ontotext.com/proton/protontop#operatedBy> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain :Transport ;
+                                                      rdfs:range :TransportCompany ;
+                                                      rdfs:comment "A relation between a service and the agent (usually organisation), who provides it."@en ;
+                                                      rdfs:label "operated by" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasAttraction
+:hasAttraction rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://dbpedia.org/ontology/City> ;
+               rdfs:range :Attraction ;
+               rdfs:comment "Associates a city with an attraction."@en ;
+               rdfs:label "has attraction" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasCuisine
+:hasCuisine rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://dbpedia.org/ontology/Restaurant> ;
+            rdfs:range :Cuisine ;
+            rdfs:comment "Indicates the type of cuisine a restaurant offers."@en ;
+            rdfs:label "has cuisine" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasHotel
+:hasHotel rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://dbpedia.org/ontology/City> ;
+          rdfs:range <http://dbpedia.org/ontology/Hotel> ;
+          rdfs:comment "Associates a city with a hotel located in it."@en ;
+          rdfs:label "has hotel" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasRestaurant
+:hasRestaurant rdf:type owl:ObjectProperty ;
+               rdfs:domain <http://dbpedia.org/ontology/City> ;
+               rdfs:range <http://dbpedia.org/ontology/Restaurant> ;
+               rdfs:comment "Associates a city with a restaurant."@en ;
+               rdfs:label "has restaurant" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#hasTransport
+:hasTransport rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://dbpedia.org/ontology/City> ;
+              rdfs:range :Transport ;
+              rdfs:comment "Associates a city with available transport services."@en ;
+              rdfs:label "has transport" .
+
+
+###  https://sparql.cwrc.ca/ontologies/cwrc#hasEvent
+<https://sparql.cwrc.ca/ontologies/cwrc#hasEvent> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://dbpedia.org/ontology/City> ;
+                                                  rdfs:range <https://sparql.cwrc.ca/ontologies/cwrc#Event> ;
+                                                  rdfs:comment "Associates a Context with an Event."@en ;
+                                                  rdfs:label "has event" .
+
+
+###  https://w3id.org/sbeo#locatedIn
+<https://w3id.org/sbeo#locatedIn> rdf:type owl:ObjectProperty ;
+                                  rdfs:domain <http://dbpedia.org/ontology/Hotel> ,
+                                              <http://dbpedia.org/ontology/Restaurant> ,
+                                              :Attraction ,
+                                              :Transport ,
+                                              <https://sparql.cwrc.ca/ontologies/cwrc#Event> ;
+                                  rdfs:range <http://dbpedia.org/ontology/City> ;
+                                  rdfs:comment "States the location of any social unit, activity, event, physical space, or a point of interest at any other physical space."@en ;
+                                  rdfs:label "located in" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:DatatypeProperty ;
+                                              rdfs:comment "Represents the latitude of a location, in decimal degrees."@en ;
+                                              rdfs:label "lat" .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:DatatypeProperty ;
+                                               rdfs:comment "Represents the longitude of a location, in decimal degrees."@en ;
+                                               rdfs:label "long" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#averagePrice
+:averagePrice rdf:type owl:DatatypeProperty ;
+              rdfs:comment "Average price for services."@en ;
+              rdfs:label "average price" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:comment "Date when an event takes place."@en ;
+      rdfs:label "date" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:comment "Unique identifier for an individual entity."@en ;
+            rdfs:label "identifier" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:comment "The name or title of the entity."@en ;
+      rdfs:label "name" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#pricePerNight
+:pricePerNight rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Cost of staying one night at the hotel."@en ;
+               rdfs:label "price per night" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#rating
+:rating rdf:type owl:DatatypeProperty ;
+        rdfs:comment "Average rating based on user reviews."@en ;
+        rdfs:label "rating" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#stars
+:stars rdf:type owl:DatatypeProperty ;
+       rdfs:comment "Star rating of a hotel from 1 to 5."@en ;
+       rdfs:label "stars" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Beach
+<http://dbpedia.org/ontology/Beach> rdf:type owl:Class ;
+                                    rdfs:subClassOf :Attraction ;
+                                    owl:disjointWith <http://dbpedia.org/ontology/Monument> ,
+                                                     <http://dbpedia.org/ontology/Museum> ,
+                                                     <http://dbpedia.org/ontology/Park> ,
+                                                     :CulturalSite ;
+                                    rdfs:comment "The shore of a body of water, especially when sandy or pebbly."@en ;
+                                    rdfs:label "Beach" .
+
+
+###  http://dbpedia.org/ontology/City
+<http://dbpedia.org/ontology/City> rdf:type owl:Class ;
+                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :identifier ;
+                                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :name ;
+                                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ;
+                                   rdfs:comment "A relatively large and permanent settlement, particularly a large urban settlement."@en ;
+                                   rdfs:label "City" .
+
+
+###  http://dbpedia.org/ontology/Hotel
+<http://dbpedia.org/ontology/Hotel> rdf:type owl:Class ;
+                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <https://w3id.org/sbeo#locatedIn> ;
+                                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :identifier ;
+                                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :name ;
+                                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :pricePerNight ;
+                                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :stars ;
+                                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :rating ;
+                                                      owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                    ] ;
+                                    rdfs:comment "A place that offers accommodation to tourists."@en ;
+                                    rdfs:label "Hotel" .
+
+
+###  http://dbpedia.org/ontology/Monument
+<http://dbpedia.org/ontology/Monument> rdf:type owl:Class ;
+                                       rdfs:subClassOf :Attraction ;
+                                       rdfs:comment "A type of structure (a statue or an art object) created to commemorate a person or important event, not necessarily of a catastrophic nature."@en ;
+                                       rdfs:label "Monument" .
+
+
+###  http://dbpedia.org/ontology/Museum
+<http://dbpedia.org/ontology/Museum> rdf:type owl:Class ;
+                                     rdfs:subClassOf :Attraction ;
+                                     rdfs:comment "An institution that conserves and exhibits cultural or historical artifacts."@en ;
+                                     rdfs:label "Museum" .
+
+
+###  http://dbpedia.org/ontology/Park
+<http://dbpedia.org/ontology/Park> rdf:type owl:Class ;
+                                   rdfs:subClassOf :Attraction ;
+                                   rdfs:comment "A park is an area of open space provided for recreational use. http://en.wikipedia.org/wiki/Park"@en ;
+                                   rdfs:label "Park" .
+
+
+###  http://dbpedia.org/ontology/Restaurant
+<http://dbpedia.org/ontology/Restaurant> rdf:type owl:Class ;
+                                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :hasCuisine ;
+                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :averagePrice ;
+                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :identifier ;
+                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :name ;
+                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :rating ;
+                                                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                         ] ;
+                                         rdfs:comment "A place where meals are prepared and served."@en ;
+                                         rdfs:label "Restaurant" .
+
+
+###  http://dbpedia.org/ontology/SportsEvent
+<http://dbpedia.org/ontology/SportsEvent> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://sparql.cwrc.ca/ontologies/cwrc#Event> ;
+                                          rdfs:comment "A event of competitive physical activity."@en ;
+                                          rdfs:label "Sports Event" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#AndalusianCuisine
+:AndalusianCuisine rdf:type owl:Class ;
+                   rdfs:subClassOf :MediterraneanCuisine ;
+                   rdfs:comment "Regional Spanish cuisine from Andalusia, rich in olive oil and tapas."@en ;
+                   rdfs:label "Andalusian Cuisine" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Attraction
+:Attraction rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :identifier ;
+                              owl:cardinality "1"^^xsd:nonNegativeInteger
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :name ;
+                              owl:cardinality "1"^^xsd:nonNegativeInteger
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :rating ;
+                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                            ] ;
+            rdfs:comment "A vocabulary to describe touristic places."@en ;
+            rdfs:label "Attraction" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BeachHotel
+:BeachHotel rdf:type owl:Class ;
+            rdfs:subClassOf <http://dbpedia.org/ontology/Hotel> ;
+            owl:disjointWith :RuralHotel ;
+            rdfs:comment "A hotel located near or on a beach, typically for vacation stays."@en ;
+            rdfs:label "Beach Hotel" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Bus
+:Bus rdf:type owl:Class ;
+     rdfs:subClassOf :Transport ;
+     owl:disjointWith :Metro ,
+                      :PublicBike ,
+                      :Tram ,
+                      <https://www.heppnetz.de/ontologies/tio/ns#Taxi> ;
+     rdfs:comment "A road vehicle designed to carry multiple passengers."@en ;
+     rdfs:label "Bus" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#BusinessHotel
+:BusinessHotel rdf:type owl:Class ;
+               rdfs:subClassOf <http://dbpedia.org/ontology/Hotel> ;
+               rdfs:comment "A hotel tailored for business travelers with related amenities."@en ;
+               rdfs:label "Business Hotel" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Cuisine
+:Cuisine rdf:type owl:Class ;
+         rdfs:comment "Represents a type of cuisine served in a restaurant."@en ;
+         rdfs:label "Cuisine" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalEvent
+:CulturalEvent rdf:type owl:Class ;
+               rdfs:subClassOf <https://sparql.cwrc.ca/ontologies/cwrc#Event> ;
+               rdfs:comment "An event focused on cultural expression or heritage."@en ;
+               rdfs:label "Cultural Event" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#CulturalSite
+:CulturalSite rdf:type owl:Class ;
+              rdfs:subClassOf :Attraction ;
+              rdfs:comment "A site of cultural significance, such as theatres or galleries."@en ;
+              rdfs:label "Cultural Site" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#GastronomicEvent
+:GastronomicEvent rdf:type owl:Class ;
+                  rdfs:subClassOf <https://sparql.cwrc.ca/ontologies/cwrc#Event> ;
+                  rdfs:comment "An event centered around food, cuisine or tasting experiences."@en ;
+                  rdfs:label "Gastronomic Event" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#ItalianCuisine
+:ItalianCuisine rdf:type owl:Class ;
+                rdfs:subClassOf :MediterraneanCuisine ;
+                rdfs:comment "Cuisine style originating from Italy, known for pasta and pizza."@en ;
+                rdfs:label "Italian Cuisine" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#JapaneseCuisine
+:JapaneseCuisine rdf:type owl:Class ;
+                 rdfs:subClassOf :Cuisine ;
+                 owl:disjointWith :MediterraneanCuisine ,
+                                  :MexicanCuisine ;
+                 rdfs:comment "Cuisine from Japan, known for sushi and precise presentation."@en ;
+                 rdfs:label "Japanese Cuisine" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#LuxuryHotel
+:LuxuryHotel rdf:type owl:Class ;
+             rdfs:subClassOf <http://dbpedia.org/ontology/Hotel> ;
+             rdfs:comment "A high-end hotel offering premium services and comfort."@en ;
+             rdfs:label "Luxury Hotel" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MediterraneanCuisine
+:MediterraneanCuisine rdf:type owl:Class ;
+                      rdfs:subClassOf :Cuisine ;
+                      owl:disjointWith :MexicanCuisine ;
+                      rdfs:comment "Cuisine based on Mediterranean cultures."@en ;
+                      rdfs:label "Mediterranean Cuisine" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Metro
+:Metro rdf:type owl:Class ;
+       rdfs:subClassOf :Transport ;
+       owl:disjointWith :PublicBike ,
+                        :Tram ,
+                        <https://www.heppnetz.de/ontologies/tio/ns#Taxi> ;
+       rdfs:comment "An underground or elevated rail transport system in cities."@en ;
+       rdfs:label "Metro" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#MexicanCuisine
+:MexicanCuisine rdf:type owl:Class ;
+                rdfs:subClassOf :Cuisine ;
+                rdfs:comment "Traditional cuisine from Mexico, featuring spicy dishes."@en ;
+                rdfs:label "Mexican Cuisine" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#PublicBike
+:PublicBike rdf:type owl:Class ;
+            rdfs:subClassOf :Transport ;
+            owl:disjointWith :Tram ,
+                             <https://www.heppnetz.de/ontologies/tio/ns#Taxi> ;
+            rdfs:comment "A shared bicycle service available for short-term rental."@en ;
+            rdfs:label "Public Bike" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#RuralHotel
+:RuralHotel rdf:type owl:Class ;
+            rdfs:subClassOf <http://dbpedia.org/ontology/Hotel> ;
+            rdfs:comment "A hotel located in rural areas, ideal for nature and countryside tourism."@en ;
+            rdfs:label "Rural Hotel" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TechnologyEvent
+:TechnologyEvent rdf:type owl:Class ;
+                 rdfs:subClassOf <https://sparql.cwrc.ca/ontologies/cwrc#Event> ;
+                 rdfs:comment "An event involving technological themes or presentations."@en ;
+                 rdfs:label "Technology Event" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TouristHotel
+:TouristHotel rdf:type owl:Class ;
+              rdfs:subClassOf <http://dbpedia.org/ontology/Hotel> ;
+              rdfs:comment "A general-purpose hotel aimed at tourists."@en ;
+              rdfs:label "Tourist Hotel" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Tram
+:Tram rdf:type owl:Class ;
+      rdfs:subClassOf :Transport ;
+      owl:disjointWith <https://www.heppnetz.de/ontologies/tio/ns#Taxi> ;
+      rdfs:comment "A street-level rail vehicle used for public transit."@en ;
+      rdfs:label "Tram" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#Transport
+:Transport rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.ontotext.com/proton/protontop#operatedBy> ;
+                             owl:cardinality "1"^^xsd:nonNegativeInteger
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <https://w3id.org/sbeo#locatedIn> ;
+                             owl:cardinality "1"^^xsd:nonNegativeInteger
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :averagePrice ;
+                             owl:cardinality "1"^^xsd:nonNegativeInteger
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :identifier ;
+                             owl:cardinality "1"^^xsd:nonNegativeInteger
+                           ] ;
+           rdfs:comment "A means or system used to move people across places."@en ;
+           rdfs:label "Transport" .
+
+
+###  https://ferran-r-p.github.io/ontologia/docs/documentation/index-en.html#TransportCompany
+:TransportCompany rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty :name ;
+                                    owl:cardinality "1"^^xsd:nonNegativeInteger
+                                  ] ;
+                  rdfs:comment "An organization that operates transport services."@en ;
+                  rdfs:label "Transport Company" .
+
+
+###  https://schema.org/MusicEvent
+<https://schema.org/MusicEvent> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://sparql.cwrc.ca/ontologies/cwrc#Event> ;
+                                rdfs:comment "An event where live or recorded music is performed."@en ;
+                                rdfs:label "Music Event" .
+
+
+###  https://sparql.cwrc.ca/ontologies/cwrc#Event
+<https://sparql.cwrc.ca/ontologies/cwrc#Event> rdf:type owl:Class ;
+                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :date ;
+                                                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :identifier ;
+                                                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                               ] ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :name ;
+                                                                 owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                               ] ;
+                                               rdfs:comment "An event that occurs in time."@en ;
+                                               rdfs:label "Event" .
+
+
+###  https://www.heppnetz.de/ontologies/tio/ns#Taxi
+<https://www.heppnetz.de/ontologies/tio/ns#Taxi> rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Transport ;
+                                                 rdfs:comment "A taxi service to transport passengers from one location to another location."@en ;
+                                                 rdfs:label "Taxi" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
